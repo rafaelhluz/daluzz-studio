@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; background: #000; }
+  body {
+    margin: 0;
+    background: #000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection { background: #a3e635; color: #000; }
+  :focus-visible { outline: 2px solid #a3e635; outline-offset: 4px; }
+}
+
+@layer components {
+  .site-container { @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12; }
+  .section-kicker { @apply mb-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.22em] text-lime-400; }
+  .section-title { @apply text-3xl font-extrabold leading-tight tracking-[-0.04em] text-white sm:text-4xl lg:text-5xl; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
