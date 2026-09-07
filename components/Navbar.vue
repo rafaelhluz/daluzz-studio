@@ -21,8 +21,8 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 <template>
   <header :class="['fixed inset-x-0 top-0 z-50 border-b transition-all duration-300', isScrolled || isOpen ? 'border-neutral-800 bg-black/90 backdrop-blur-xl' : 'border-transparent bg-transparent']">
     <div class="site-container flex h-20 items-center justify-between">
-      <a href="#inicio" class="relative z-10 flex h-12 items-center" aria-label="DALUZZ studio, início" @click="closeMenu">
-        <img src="/logo.png" alt="DALUZZ studio" class="h-28 w-auto max-w-none object-contain sm:h-32">
+      <a href="#inicio" class="relative z-10 flex items-center" aria-label="DALUZZ studio, início" @click="closeMenu">
+        <img src="/logo.png" alt="DALUZZ studio" class="h-7 sm:h-8 md:h-9 w-auto object-contain">
       </a>
       <nav class="hidden items-center gap-8 lg:flex" aria-label="Navegação principal">
         <a v-for="link in links" :key="link.href" :href="link.href" class="text-sm font-medium text-neutral-300 transition-colors hover:text-lime-400">{{ link.label }}</a>

@@ -7,7 +7,7 @@ const root = ref(null)
 let ctx
 const founders = reactive([
   {
-    name: 'Maria P. Albano',
+    name: 'Maria Albano',
     role: 'Marketing & Criação',
     initials: 'MA',
     image: '/maria.jpg',
@@ -15,12 +15,12 @@ const founders = reactive([
     bio: 'É quem vive o lado estratégico e criativo da Daluzz, pensando em marcas, comunicação, conteúdo e em como transformar uma ideia em algo que faça sentido visualmente.'
   },
   {
-    name: 'Rafael Henrique da Luz',
+    name: 'Rafael da Luz',
     role: 'TI & Desenvolvimento',
     initials: 'RL',
     image: '/rafael.jpg',
     imageFailed: false,
-    bio: 'É quem fica por trás da parte tecnológica, transformando conceitos em sites, ferramentas e experiências digitais que funcionam de verdade.'
+    bio: 'É quem fica por trás da parte tecnológica, transformando conceitos em sites e sistemas, ferramentas e experiências digitais que funcionam de verdade.'
   }
 ])
 

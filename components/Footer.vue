@@ -10,9 +10,15 @@ const socials = [
   <footer class="border-t border-neutral-900 bg-neutral-950">
     <div class="site-container py-12">
       <div class="flex flex-col justify-between gap-10 border-b border-neutral-800 pb-12 md:flex-row md:items-end">
-        <div>
-          <a href="#inicio" aria-label="Voltar ao início"><img src="/logo.png" alt="DALUZZ studio" class="h-28 w-auto max-w-none object-contain"></a>
-          <p class="-mt-5 max-w-sm text-sm leading-relaxed text-neutral-500">Criamos o que a sua marca ainda não conseguiu dizer.</p>
+        <div class="w-full md:max-w-xl">
+          <a href="#inicio" aria-label="Voltar ao início" class="flex w-fit max-w-full items-center">
+            <img src="/logo.png" alt="DALUZZ studio" class="block h-14 w-auto max-w-full object-contain object-left sm:h-16 md:h-20">
+          </a>
+          <p class="mt-6 max-w-sm text-sm leading-relaxed text-neutral-500">Criamos o que a sua marca ainda não conseguiu dizer.</p>
+          <div class="mt-5 inline-flex items-center gap-2 rounded-full border border-neutral-800 px-3 py-2 text-xs font-semibold text-neutral-300">
+            <span class="w-2 h-2 shrink-0 rounded-full bg-lime-400 animate-pulse" aria-hidden="true"></span>
+            Disponível para novos projetos
+          </div>
         </div>
         <div class="flex flex-wrap gap-x-7 gap-y-3">
             <a v-for="social in socials" :key="social.label" :href="social.href" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-neutral-300 transition hover:text-lime-400">{{ social.label }} ↗</a>

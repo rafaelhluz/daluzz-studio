@@ -112,7 +112,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section id="contato" ref="root" class="relative overflow-hidden py-24 sm:py-32">
+  <section ref="root" class="relative overflow-hidden py-24 sm:py-32">
     <div class="pointer-events-none absolute left-1/2 top-1/3 h-96 w-96 -translate-x-1/2 rounded-full bg-lime-400/10 blur-[150px]" />
 
     <div class="site-container relative">
@@ -126,7 +126,7 @@ onUnmounted(() => {
         </div>
       </div>
 
-      <div data-contact-cta class="py-16 text-center sm:py-20">
+      <div id="contato" data-contact-cta class="scroll-mt-28 py-16 text-center sm:py-20">
         <h2 class="text-3xl font-black leading-tight tracking-[-.04em] text-white sm:text-4xl lg:text-5xl">Vamos criar alguma coisa <span class="text-lime-400">juntos?</span></h2>
         <button form="contact-form" type="submit" class="mt-8 inline-flex rounded-full bg-lime-400 px-8 py-4 text-sm font-black uppercase tracking-[.12em] text-black transition hover:bg-lime-300 hover:shadow-[0_0_30px_rgba(163,230,53,.25)]">
           Falar com a Daluzz <span class="ml-2" aria-hidden="true">↗</span>
